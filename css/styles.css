@@ -1,3 +1,14 @@
 /* font-family: 'Crimson Pro', serif;
 font-family: 'Lora', serif;
 font-family: 'Montserrat', sans-serif; */
+:root {
+  --color-bg: #181719;
+  --color-text: #fff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #f8f8fa;
+    --color-text: #3a3a3a;
+  }
+}
