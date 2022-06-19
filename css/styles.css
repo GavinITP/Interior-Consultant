@@ -81,7 +81,7 @@ body {
 
 .card__name {
   font-family: var(--font-general);
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 1.6vw, 1.4rem);
   font-weight: 500;
   margin: 5px 15px;
 }
@@ -89,7 +89,7 @@ body {
 .card__job {
   font-family: var(--font-general);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
   color: #828282;
   margin: 2px 15px;
 }
@@ -97,6 +97,6 @@ body {
 .card__heading {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 2.7vw, 2.4rem);
   width: 17ch;
 }
