@@ -1,9 +1,9 @@
-/* font-family: 'Crimson Pro', serif;
-font-family: 'Lora', serif;
-font-family: 'Montserrat', sans-serif; */
 :root {
   --color-bg: #181719;
   --color-text: #fff;
+  --font-heading: "Lora", "Times New Roman", Times, serif;
+  --font-general: "Montserrat", Arial, Helvetica, sans-serif;
+  --font-logo: "Crimson Pro", "Times New Roman", Times, serif;
 }
 
 @media (prefers-color-scheme: light) {
