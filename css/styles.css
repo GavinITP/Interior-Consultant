@@ -1,3 +1,8 @@
+/* box-sizing */
+* {
+  box-sizing: border-box;
+}
+/* font and color */
 :root {
   --color-bg: #181719;
   --color-text: #fff;
@@ -11,4 +16,46 @@
     --color-bg: #f8f8fa;
     --color-text: #3a3a3a;
   }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* article */
+
+.article__heading {
+  font-family: var(--font-heading);
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.article__paragraph {
+  font-family: var(--font-general);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 22ch;
+}
+
+.article__link {
+  color: var(--color-text);
+  font-family: var(--font-general);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article__link > span {
+  transform: translate(2px, 8px);
+  transition: transform 0.2s;
+}
+
+.article__link:hover > span {
+  transform: translate(7px, 8px);
 }
