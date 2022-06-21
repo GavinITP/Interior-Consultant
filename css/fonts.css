@@ -1,0 +1,57 @@
+/* crimson-pro-200 - latin */
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 200;
+  font-display: fallback;
+  src: local(""),
+    url("../fonts/crimson-pro-v21-latin-200.woff2") format("woff2"),
+    url("../fonts/crimson-pro-v21-latin-200.woff") format("woff");
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local(""),
+    url("../fonts/montserrat-v24-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v24-latin-regular.woff") format("woff");
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: local(""), url("../fonts/montserrat-v24-latin-500.woff2") format("woff2"),
+    url("../fonts/montserrat-v24-latin-500.woff") format("woff");
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: local(""), url("../fonts/montserrat-v24-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v24-latin-700.woff") format("woff");
+}
+
+/* lora-500 - latin */
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  font-display: optional;
+  src: local(""), url("../fonts/lora-v24-latin-500.woff2") format("woff2"),
+    url("../fonts/lora-v24-latin-500.woff") format("woff");
+}
+/* lora-700 - latin */
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: local(""), url("../fonts/lora-v24-latin-700.woff2") format("woff2"),
+    url("../fonts/lora-v24-latin-700.woff") format("woff");
+}

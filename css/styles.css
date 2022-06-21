@@ -6,9 +6,15 @@
 :root {
   --color-bg: #181719;
   --color-text: #fff;
-  --font-heading: "Lora", "Times New Roman", Times, serif;
-  --font-general: "Montserrat", Arial, Helvetica, sans-serif;
-  --font-logo: "Crimson Pro", "Times New Roman", Times, serif;
+  --font-heading: "Lora", Iowan Old Style, Apple Garamond, Baskerville,
+    Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --font-general: "Montserrat", -apple-system, BlinkMacSystemFont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
+    arial, sans-serif;
+  --font-logo: "Crimson Pro", Iowan Old Style, Apple Garamond, Baskerville,
+    Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,17 +24,12 @@
   }
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   background: var(--color-bg);
   color: var(--color-text);
 }
 
 /* article */
-
 .article__heading {
   font-family: var(--font-heading);
   font-size: 3.6rem;
@@ -64,8 +65,8 @@ body {
 .card {
   background: var(--color-bg);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 138px;
-  width: 300px;
+  aspect-ratio: 300/138;
+  width: clamp(300px, 221.9532554257px + 18.363939899833056vw, 410px);
   padding: 15px 30px;
 }
 
@@ -81,7 +82,11 @@ body {
 
 .card__name {
   font-family: var(--font-general);
-  font-size: clamp(1.2rem, 1.6vw, 1.4rem);
+  font-size: clamp(
+    0.75rem,
+    0.6613105175292153rem + 0.333889816360601vw,
+    0.875rem
+  );
   font-weight: 500;
   margin: 5px 15px;
 }
@@ -89,7 +94,11 @@ body {
 .card__job {
   font-family: var(--font-general);
   font-weight: 500;
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  font-size: clamp(
+    0.625rem,
+    0.5363105175292153rem + 0.333889816360601vw,
+    0.75rem
+  );
   color: #828282;
   margin: 2px 15px;
 }
@@ -97,6 +106,11 @@ body {
 .card__heading {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: clamp(1.8rem, 2.7vw, 2.4rem);
+  font-size: 1.125rem;
+  font-size: clamp(
+    1.125rem,
+    0.8589315525876461rem + 1.001669449081803vw,
+    1.5rem
+  );
   width: 17ch;
 }
