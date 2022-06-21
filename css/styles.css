@@ -1,3 +1,6 @@
+@import "./fonts.css";
+@import "./normalize.css";
+
 /* box-sizing */
 * {
   box-sizing: border-box;
