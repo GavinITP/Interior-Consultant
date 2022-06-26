@@ -132,7 +132,7 @@ body {
 
 /* Logo */
 .logo {
-  border: 1px solid #fff;
+  border: 1px solid var(--color-text);
   display: inline-flex;
   height: 30px;
   width: 120px;
@@ -144,4 +144,41 @@ body {
   font-weight: 200;
   text-transform: uppercase;
   margin: auto;
+}
+
+/* Menu */
+.menu {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.menu__burger {
+  width: 30px;
+  height: 3px;
+  background: var(--color-text);
+  transition: all 0.2s;
+}
+
+.menu__burger::before,
+.menu__burger::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: var(--color-text);
+  transition: all 0.2s;
+}
+
+.menu__burger::before {
+  transform: translateY(-8px);
+}
+
+.menu__burger::after {
+  transform: translateY(8px);
 }
