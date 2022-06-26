@@ -61,6 +61,20 @@ body {
   transform: translate(7px, 8px);
 }
 
+@media screen and (min-width: 768px) {
+  .article__heading {
+    font-size: 4.8rem;
+  }
+
+  .article__paragraph {
+    font-size: 2.4rem;
+  }
+
+  .article__link {
+    font-size: 1.8rem;
+  }
+}
+
 /* card */
 .card {
   background: var(--color-bg);
@@ -82,7 +96,7 @@ body {
 
 .card__name {
   font-family: var(--font-general);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   margin: 5px 15px;
 }
@@ -98,7 +112,20 @@ body {
 .card__heading {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.125rem;
-  font-size: 1rem;
+  font-size: 1.8rem;
   width: 17ch;
+}
+
+@media screen and (min-width: 768px) {
+  .card__name {
+    font-size: 1.4rem;
+  }
+
+  .card__job {
+    font-size: 1.2rem;
+  }
+
+  .card__heading {
+    font-size: 2.4rem;
+  }
 }
