@@ -20,11 +20,8 @@
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-bg: #f8f8fa;
-    --color-text: #3a3a3a;
-  }
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -55,12 +52,12 @@ body {
   text-decoration: none;
 }
 
-.article__link > span {
+.article__link > img {
   transform: translate(2px, 8px);
   transition: transform 0.2s;
 }
 
-.article__link:hover > span {
+.article__link:hover > img {
   transform: translate(7px, 8px);
 }
 
@@ -68,8 +65,8 @@ body {
 .card {
   background: var(--color-bg);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  aspect-ratio: 300/138;
-  width: clamp(300px, 221.9532554257px + 18.363939899833056vw, 410px);
+  width: 300px;
+  height: 138px;
   padding: 15px 30px;
 }
 
@@ -85,11 +82,7 @@ body {
 
 .card__name {
   font-family: var(--font-general);
-  font-size: clamp(
-    0.75rem,
-    0.6613105175292153rem + 0.333889816360601vw,
-    0.875rem
-  );
+  font-size: 1rem;
   font-weight: 500;
   margin: 5px 15px;
 }
@@ -97,11 +90,7 @@ body {
 .card__job {
   font-family: var(--font-general);
   font-weight: 500;
-  font-size: clamp(
-    0.625rem,
-    0.5363105175292153rem + 0.333889816360601vw,
-    0.75rem
-  );
+  font-size: 1rem;
   color: #828282;
   margin: 2px 15px;
 }
@@ -110,10 +99,6 @@ body {
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.125rem;
-  font-size: clamp(
-    1.125rem,
-    0.8589315525876461rem + 1.001669449081803vw,
-    1.5rem
-  );
+  font-size: 1rem;
   width: 17ch;
 }
