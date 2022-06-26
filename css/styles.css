@@ -182,3 +182,15 @@ body {
 .menu__burger::after {
   transform: translateY(8px);
 }
+
+.menu.open .menu__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu.open .menu__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu.open .menu__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
