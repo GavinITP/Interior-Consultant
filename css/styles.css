@@ -9,7 +9,6 @@
 :root {
   --color-bg: #181719;
   --color-text: #fff;
-  --color-bg-2: #181719;
   --font-heading: "Lora", Iowan Old Style, Apple Garamond, Baskerville,
     Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
@@ -25,7 +24,6 @@
   :root {
     --color-bg: #f5f5f5;
     --color-text: #222;
-    --color-bg-2: #eee;
   }
 }
 
@@ -92,14 +90,14 @@ body {
 
 /* card */
 .card {
-  background: var(--color-bg-2);
+  background: var(--color-bg);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: min(70vw, 300px);
   height: 138px;
   padding: 10px 20px;
   position: absolute;
   bottom: -15vh;
-  right: 8vw;
+  right: 3vw;
 }
 
 .card__profile {
@@ -227,7 +225,8 @@ body {
   display: grid;
   gap: 40px;
   position: relative;
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 .grid > .design-work > img {
@@ -244,7 +243,8 @@ body {
 
 .container {
   margin-inline: auto;
-  padding: 0 5vw;
+  max-width: 1200px;
+  padding-inline: 10px;
 }
 
 /* Nav */
@@ -253,8 +253,8 @@ body {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-bg-2);
-  padding: 10px 5vh;
+  background: var(--color-bg);
+  padding: 30px 10px;
 }
 
 .navbar-links {
@@ -275,14 +275,15 @@ body {
   display: block;
   text-decoration: none;
   font-family: var(--font-general);
+  font-size: 1.8rem;
   color: var(--color-text);
-  margin-left: 50px;
+  margin-left: 80px;
 }
 
 .toggle-button {
   position: absolute;
-  top: 0.75rem;
-  right: 1rem;
+  top: 35px;
+  right: 10px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -319,4 +320,19 @@ body {
   .navbar-links.active {
     display: flex;
   }
+}
+
+/* Website owner */
+.website-owner {
+  color: #a9a9a9;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.website-owner a {
+  color: #a9a9a9;
+  font-weight: 700;
 }
