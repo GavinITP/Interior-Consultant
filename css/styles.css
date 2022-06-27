@@ -23,7 +23,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --color-bg: #f5f5f5;
-    --color-text: #222;
+    --color-text: #333;
   }
 }
 
@@ -96,7 +96,7 @@ body {
   height: 138px;
   padding: 10px 20px;
   position: absolute;
-  bottom: -15vh;
+  bottom: -10vh;
   right: 3vw;
 }
 
@@ -158,6 +158,10 @@ body {
   display: inline-flex;
   height: 30px;
   width: 120px;
+}
+
+.logo__link {
+  text-decoration: none;
 }
 
 .logo__text {
@@ -225,8 +229,8 @@ body {
   display: grid;
   gap: 40px;
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin-top: 70px;
+  margin-bottom: 250px;
 }
 
 .grid > .design-work > img {
@@ -237,6 +241,7 @@ body {
 @media screen and (min-width: 1024px) {
   .grid {
     grid-template-columns: 45% 55%;
+    margin-top: 100px;
     gap: 0;
   }
 }
@@ -255,29 +260,48 @@ body {
   align-items: center;
   background: var(--color-bg);
   padding: 30px 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .navbar-links {
   height: 100%;
 }
 
-.navbar-links ul {
+.nav-list {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.navbar-links li {
+.nav-item {
   list-style: none;
 }
 
-.navbar-links li a {
+.nav-item > a {
   display: block;
   text-decoration: none;
   font-family: var(--font-general);
   font-size: 1.8rem;
+  position: relative;
   color: var(--color-text);
   margin-left: 80px;
+}
+
+.nav-item > a::before {
+  background: var(--color-text);
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(30px);
+  transition: width 0.2s;
+  width: 0%;
+}
+
+.nav-item:hover > a::before {
+  width: 100%;
 }
 
 .toggle-button {
@@ -304,17 +328,23 @@ body {
     width: 100%;
   }
 
-  .navbar-links ul {
+  .nav-list {
     width: 100%;
+    margin: 27vh 0;
     flex-direction: column;
   }
 
-  .navbar-links ul li {
+  .nav-item {
     text-align: center;
   }
 
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
+  .nav-item > a {
+    margin-left: 0;
+    padding: 20px 0;
+  }
+
+  .nav-item > a::before {
+    display: none;
   }
 
   .navbar-links.active {
@@ -332,7 +362,7 @@ body {
   text-align: center;
 }
 
-.website-owner a {
+.website-owner > a {
   color: #a9a9a9;
   font-weight: 700;
 }
