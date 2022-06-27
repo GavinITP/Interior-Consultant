@@ -164,6 +164,7 @@ body {
 
 .logo__text {
   font-family: var(--font-heading);
+  color: var(--color-text);
   font-size: 1.4rem;
   font-weight: 200;
   text-transform: uppercase;
@@ -221,68 +222,12 @@ body {
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
-/* List */
-.list {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  margin-top: 30vh;
-  padding: 0;
-  position: relative;
-  text-align: center;
-}
-
-.list__item {
-  display: inline-block;
-  font-family: var(--font-general);
-  font-weight: 500;
-  font-size: 1.8rem;
-  margin: 1.6rem 0;
-}
-
-.list__item > a {
-  color: var(--color-text);
-  position: relative;
-  text-decoration: none;
-}
-
-.list__item > a::after {
-  background: var(--color-text);
-  content: "";
-  height: 2px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: translateY(30px);
-  transition: width 0.2s;
-  width: 0;
-}
-
-.list__item > a:hover::after {
-  width: 100%;
-}
-
-.list__item > a:hover {
-  font-weight: 700;
-}
-
-@media screen and (min-width: 768px) {
-  .list {
-    flex-direction: row;
-    margin-top: 0;
-  }
-
-  .list__item {
-    margin-left: 8.6rem;
-  }
-}
-
 /* Grid */
 .grid {
   display: grid;
   gap: 40px;
   position: relative;
-  margin: 150px 0;
+  margin: 100px 0;
 }
 
 .grid > .design-work > img {
@@ -303,3 +248,75 @@ body {
 }
 
 /* Nav */
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-bg-2);
+  padding: 10px 5vh;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  font-family: var(--font-general);
+  color: var(--color-text);
+  margin-left: 50px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
