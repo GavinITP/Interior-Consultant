@@ -11,7 +11,7 @@ The team page was developed using the design from this challenge: https://devcha
 
 ## Demo
 
-https://gavinitp-mygallery.netlify.app/
+https://gavinitp-interior.netlify.app/
 
 It also supports both light mode and dark mode.
 Switch your browser theme to see the result.
